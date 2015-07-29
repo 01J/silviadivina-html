@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251">
+</head>
+
+<body>
+<form name="form" action="http://unsen.elitno.net/upload.php" method="post" enctype="multipart/form-data">
+<font size = 2px color="#d22820" face="Verdana"><B>
+Выберите категорию:
+</B></font><br>
+<select name="category">
+<option value="01">Спецодежда для защиты от пониженных температур </option>
+<option value="2">Спецодежда от общих производственных загрязнений неутепленная </option>
+<option value="3">Спецодежда сигнальная </option>
+<option value="4">Для защиты от влаги </option>
+<option value="5">Для охранных структур </option>
+<option value="6">Для медицинского персонала </option>
+<option value="7">Униформа для ресторанов, баров и пищевой промышленности </option>
+<option value="8">Униформа для клининговых служб </option>
+<option value="9">Униформа для торгового персонала и сферы обслуживания </option>
+<option value="10">Жилеты </option>
+<option value="11">Фартуки, передники, нарукавники </option>
+<option value="12">Для активного отдыха и спорта </option>
+<option value="13">Рекламная, промо - одежда</option>
+<option value="14">Спецодежда СТО, автосервисов и автосалонов </option>
+<option value="15">Униформа для парикмахерских </option>
+<option value="16">Майки, футболки, толстовки, байки </option>
+<option value="17">Головные уборы </option>
+<option value="18">Детская одежда </option>
+<option value="19">Одежда для животных</option>
+</select>
+<br><font size = 2px color="#d22820" face="Verdana"><B>
+Введите номер модели:
+</B></font><br>
+<input name="model" type="text">
+<br><font size = 2px color="#d22820" face="Verdana"><B>
+Введите название модели:
+</B></font><br>
+<input name="name" type="text">
+<br><font size = 2px color="#d22820" face="Verdana"><B>
+Введите цену модели:
+</B></font><br>
+<input name="price" type="text">
+<br><font size = 2px color="#d22820" face="Verdana"><B>
+Введите описание модели:
+</B></font><br>
+<textarea name="description"></textarea>
+<br>
+<input type="hidden" name="MAX_FILE_SIZE" value="1000000">
+<br><font size = 2px color="#d22820" face="Verdana"><B>
+Выберите файл для профиля:
+</B></font><br>
+<input type="file" name="filename1"><br>
+<input type="file" name="filename2"><br>
+<input type="file" name="filename3"><br>
+
+<input type="submit" value="Добавить" onClick="test(this.form)"><br>
+</form>
+</body>
+</html>

@@ -1,0 +1,12 @@
+#carousel {
+    width:650px;
+    height: 370px;
+    display: relative;
+	margin-bottom:45px;
+	}
+	
+  #carousel img {
+    display: hidden;
+    cursor: pointer; 
+	border:none !important}
+  }

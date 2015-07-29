@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<script type="text/javascript" src="swfobject.js"></script> 
+<script type="text/javascript"> 
+	function  myTags(mytags){
+		mytags=mytags.replace(/<A/g, '<a')
+			.replace(/\/A>/g, "/a>")
+			.replace(/(\starget=_)(\w*)/g, ' target="_$2"')
+			.replace(/(\sclass=)(?!")(\w*)/g, ' class="$2"')
+			.replace(/(\sname=)(?!")(\w*)/g, ' name="$2"')
+			.replace(/(\sid=)(?!")(\w*)/g, ' id="$2"')
+			.replace(/(\srel=)(?!")(\w*)/g, ' rel="$2"');
+		mytags=encodeURIComponent(mytags).replace(/!/g, '%21')
+			.replace(/'/g, '%27').replace(/\(/g, '%28')
+			.replace(/\)/g, '%29').replace(/\*/g, '%2A');
+		var rnumber = Math.floor(Math.random()*9999999);
+		var flashvars = {
+			tcolor:"0x000066",
+			tcolor2:"0x000066",
+			hicolor:"0xd22820",
+			tspeed:"110",
+			distr:"true",
+			mode:"tags",
+			tagcloud:mytags
+		};
+		var params = {
+			allowScriptAccess:"always",
+			wmode:'transparent'
+		};
+		var attributes = {
+			id:"flash_cloud"
+		};
+		swfobject.embedSWF("tagcloud.swf?r="+rnumber,
+						   "tags", "200", "200", "9.0.0",
+						   "expressInstall.swf", flashvars,
+						   params, attributes);
+	}
+ 
+	window.onload=function(){ 
+		var mytags="<tags>"
+		+document.getElementById('tags').innerHTML
+		+"</tags>";
+		myTags(mytags);
+	};
+</script>
+</head>
+
+<body>
+<div id="tags"> 
+	<a href='1.php' style='font-size:10pt;'>костюм рабочий зимний, брюки зимние, полукомбинезон утепленный</a>
+<a href='2.php' 
+style='font-size:10pt;'>костюм рабочий, брюки рабочие, полукомбинезон рабочий</a>
+<a href='3.php' 
+style='font-size:10pt;'>жилет сигнальный, ветровка, костюм дорожника</a>
+<a href='4.php' 
+style='font-size:10pt;'>плащи, костюм мойщика</a>
+<a href='5.php' style='font-size:10pt;'>костюм охрана</a>
+<a href='6.php' 
+style='font-size:10pt;'>костюмы медика, халат медика</a>
+<a href='7.php' 
+style='font-size:10pt;'>жилет бармена, передник бармена, костюм повара, куртка повара</a>
+<a href='8.php' style='font-size:10pt;'>комплект дл€ уборщицы, халат уборщицы</a>
+<a href='9.php' 
+style='font-size:10pt;'>накидка двусторонн€€, блузка, рубашка</a>
+<a href='10.php' 
+
+style='font-size:10pt;'>жилет утепленный, жилет классический</a>
+<a href='11.php' 
+
+style='font-size:10pt;'>нарукавники, фартук, передник</a>
+<a href='12.php' 
+
+style='font-size:10pt;'>костюм лыжника, костюм охотника</a>
+<a href='13.php' 
+
+style='font-size:10pt;'>майки с логотипами, бейсболки</a>
+<a href='14.php' 
+
+style='font-size:10pt;'>костюм автомеханика</a>
+<a href='15.php' 
+
+style='font-size:10pt;'>пеньюар</a>
+<a href='16.php' 
+
+style='font-size:10pt;'>майки, толстовки, байки</a>
+<a href='17.php' 
+
+style='font-size:10pt;'>головные уборы</a>
+<a href='18.php' 
+
+style='font-size:10pt;'>детска€ одежда</a>
+<a href='19.php' 
+
+style='font-size:10pt;'>одежда дл€ животных</a>
+</div> 
+
+
+</body>
+</html>

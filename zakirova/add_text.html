@@ -1,0 +1,50 @@
+ <!DOCTYPE php PUBLIC "-//W3C//DTD php 4.01 Frameset//EN" "http://www.w3.org/TR/php4/frameset.dtd">
+ 
+<head>
+  <meta http-equiv="Content-Type" content="text/php; charset="windows1251">
+  
+<title>САЙТ АЛЕНЫ ЗАКИРОВОЙ</title>
+
+<style type="text/css">
+ 
+a {
+	text-decoration: none;
+   } 
+  </style>
+</head>
+ 
+ 
+ 
+ 
+<body background="images/paper.png" text="#214263" link="#DAA520" vlink="#DAA520" alink="#214263">
+<table width = "100%" border = "0" align="center" background="images/paper.png">
+<tr><td colspan="2">
+<p align = center> <font size="6%" color="#DAA520"><b>Добавить статью</b></font></p>
+</td>
+</tr>
+<tr><td colspan="2">
+<form name="add_text" method="POST" action="add_text.php">
+<font color = #214263 size="6%" face="Arial"><b><p align = left>
+Введите название статьи
+</p></b></font>
+<input name="name_text" type="text">
+<font color = #214263 size="6%" face="Arial"><b><p align = left>
+Введите анонс к статье
+</p></b></font>
+<textarea name="link_text" cols="50" rows="10"></textarea>
+<font color = #214263 size="6%" face="Arial"><b><p align = left>
+Введите текст статьи
+</p></b></font>
+<textarea name="body_text" cols="50" rows="10"></textarea>
+<font color = #214263 size="6%" face="Arial"><b><p align = left>
+Выберите картинку
+</p></b></font>
+<input name="img_text" type="File">
+<p align = left>
+<input name="post" type="Submit" value="добавить статью" width="30%">
+</p>
+</form>
+</td>
+</tr>
+</table>
+</body>
